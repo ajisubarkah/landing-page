@@ -3,18 +3,19 @@ import React, { Component } from 'react'
 import Layout from '../components/Layout'
 import Helmet from 'react-helmet'
 import GitHubButton from 'react-github-btn'
+import ButtonLink from '../components/ButtonLink'
 import config from '../../site-config'
-import foto from '../images/profile.jpg'
+import foto from '../images/profile.png'
 import '../utils/fontawesome'
 
 export default class Index extends Component {
   render() {
     return (
       <Layout>
-        <Helmet title={`${config.siteTitle} - Software Developer`} />
+        <Helmet title={`${config.siteTitle} • Software Developer`} />
         <div className="lead">
           <div className="elevator">
-            <h1>{`Hello, I'm Aji `}</h1>
+            <h1>{`Hey, I'm Aji `}</h1>
             <p>
               I'm a software developer from Situbondo, Indonesia. Working on{' '}
               <a
@@ -30,9 +31,9 @@ export default class Index extends Component {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                freelance
+                freelancer
               </a>{' '}
-              web and android developer from home.
+              web and android developer work from home.
             </p>
             <div className="social-buttons">
               <GitHubButton
@@ -48,7 +49,13 @@ export default class Index extends Component {
             <img src={foto} className="newsletter-avatar" alt="subarkah" />
             <div>
               <h3>Get in touch</h3>
-              <p>Web and Mobile Apps developer.</p>
+              <p>
+                Web and Mobile Apps developer.<br></br>
+                <ButtonLink
+                  to="mailto:aji@subarkah.id"
+                  icon={['fas', 'envelope']}
+                />
+              </p>
             </div>
           </div>
         </div>

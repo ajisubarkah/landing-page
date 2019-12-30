@@ -212,6 +212,21 @@
   }
 }
 
+.page {
+  font-family: 'exo 2', sans-serif;
+  p {
+    max-width: 100%;
+  }
+}
+
+@include small-breakpoint {
+  .page {
+    p {
+      max-width: 70%;
+    }
+  }
+}
+
 .post-container {
   display: flex;
 }
@@ -715,6 +730,7 @@ blockquote {
 }
 
 .quotations {
+  font-family: $font-family;
   display: flex;
   flex-wrap: wrap;
 
@@ -960,9 +976,9 @@ blockquote {
 
   a {
     font-weight: 400;
-    color: darken($secondary-color, 30%);
+    color: darken($alternate-color, 30%);
     &:hover {
-      color: $primary-color;
+      color: $alternate-color;
     }
   }
 }

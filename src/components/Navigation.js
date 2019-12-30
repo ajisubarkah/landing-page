@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
-import favicon from '../images/favicon.svg'
+import brand from '../images/brand.png'
 
 export default class Navigation extends Component {
   state = {
@@ -28,7 +28,7 @@ export default class Navigation extends Component {
         <div className="nav-container">
           <div className="brand">
             <Link to="/">
-              <img src={favicon} className="favicon" alt={'AS'} />
+              <img src={brand} className="favicon" alt={'AS'} />
               <span className="text">Aji Subarkah</span>
             </Link>
           </div>

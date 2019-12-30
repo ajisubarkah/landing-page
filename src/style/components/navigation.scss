@@ -34,7 +34,7 @@
       align-items: center;
       color: black;
       margin-right: 0;
-      font-weight: 600;
+      font-weight: 900;
       font-size: 1.1rem;
 
       &:hover,
@@ -81,7 +81,7 @@
 
 .favicon {
   display: inline-block;
-  height: 23px;
+  height: 32px;
   width: 32px;
   min-width: 32px;
   margin-right: .75rem;
@@ -124,12 +124,12 @@ button.dark-switcher {
       .links a {
 
         &:hover,
-        &.active {
+        &:active {
           color: rgba(0, 0, 0, 0.45);
         }
 
-        &:active {
-          color: rgba(0, 0, 0, 0.45);
+        &.active {
+          color: rgba(0, 0, 0, 1);
         }
       }
     }
