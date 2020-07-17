@@ -1,10 +1,13 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 @import url('https://fonts.googleapis.com/css?family=Exo+2&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
 @font-face {
   font-family: 'braggadocio';
   src: url('../fonts/braggadocio.ttf') format('truetype');
 }
+
 // Variables
 @import 'base/variables';
 @import 'base/mixins';

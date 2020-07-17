@@ -4,15 +4,15 @@ const config = {
   siteDescription: 'Hey, my name is Mohammad Aji Subarkah.',
   menuLinks: [
     {
-      name: 'About',
+      name: 'Tentang',
       link: '/about/',
     },
     {
-      name: 'Works',
+      name: 'Blog',
       link: '/works/',
     },
     {
-      name: 'Contact',
+      name: 'Kontak',
       link: '/contact/',
     },
   ],

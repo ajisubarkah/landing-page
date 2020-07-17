@@ -1,76 +1,79 @@
-/* Helpers
-  =============== */
+/* Helpers */
 
-  .text-right {
-    text-align: right;
-  }
+.text-right {
+  text-align: right;
+}
 
-  .text-center {
-    text-align: center;
-  }
+.text-center {
+  text-align: center;
+}
 
-  .text-justify {
-    text-align: justify;
-  }
+.text-justify {
+  text-align: justify;
+}
 
-  // Display
-  .block {
-    display: block;
-  }
+.nowrap {
+  white-space: nowrap;
+}
 
-  .inline-block {
-    display: inline-block;
-  }
+// Display
+.block {
+  display: block;
+}
 
-  .inline {
-    display: inline;
-  }
+.inline-block {
+  display: inline-block;
+}
 
-  // Vertical center
-  .vertical-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.inline {
+  display: inline;
+}
 
-  .flex {
-    display: flex;
-  }
+// Vertical center
+.vertical-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  // Display State
-  .show {
-    display: block !important;
-  }
+.flex {
+  display: flex;
+}
 
-  .hide {
-    display: none !important;
-  }
+// Display State
+.show {
+  display: block !important;
+}
 
-  .invisible {
-    visibility: hidden;
-  }
+.hide {
+  display: none !important;
+}
 
-  .green {
-    color: $green;
-  }
+.invisible {
+  visibility: hidden;
+}
 
-  .pink {
-    color: $secondary-color;
-  }
+.green {
+  color: $green;
+}
 
-  .blue {
-    color: $primary-color;
-  }
+.pink {
+  color: $secondary-color;
+}
 
-  .yellow {
-    color: darken($yellow, 10%);
-  }
+.blue {
+  color: $primary-color;
+}
 
-  // Screen reader text for accessibility
-  .screen-reader-text {
-    clip: rect(1px, 1px, 1px, 1px);
-    position: absolute !important;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
-  }
+.yellow {
+  color: darken($yellow, 10%);
+}
+
+// Screen reader text for accessibility
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}

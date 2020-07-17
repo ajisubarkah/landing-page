@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 
-import Layout from '../components/Layout'
 import Helmet from 'react-helmet'
+import Layout from '../components/Layout'
+import { ButtonLink, ButtonIcon } from '../components/Button'
 import GitHubButton from 'react-github-btn'
-import ButtonLink from '../components/ButtonLink'
 import config from '../../site-config'
-import foto from '../images/profile.png'
+import Avatar from '../images/profile.png'
 import '../utils/fontawesome'
 
 export default class Index extends Component {
@@ -15,47 +15,25 @@ export default class Index extends Component {
         <Helmet title={`${config.siteTitle} • Software Developer`} />
         <div className="lead">
           <div className="elevator">
-            <h1>{`Hey, I'm Aji `}</h1>
+            <h1>{`Yo, namaku Aji `}</h1>
             <p>
-              I'm a software developer from Situbondo, Indonesia. Working on{' '}
-              <a
-                href="https://rumahkode.id"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                rumahkode
-              </a>{' '}
-              and also{' '}
-              <a
-                href="https://www.linkedin.com/in/mohammad-aji-subarkah-7ab0a0135/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                freelancer
-              </a>{' '}
-              web and android developer work from home.
+              Seorang software engineering dari Situbondo, Indonesia. Founder dari{' '}
+              <ButtonLink to="https://rumahkode.id" target="_blank" text="rumahkode" /> dan juga sebagai{' '}
+              <ButtonLink to="https://www.linkedin.com/in/mohammad-aji-subarkah-7ab0a0135/" target="_blank" text="frelancer" /> website, android dan
+              iOS yang work from home.
             </p>
             <div className="social-buttons">
-              <GitHubButton
-                href="https://github.com/ajisubarkah"
-                data-size="large"
-                data-show-count="true"
-              >
+              <GitHubButton href="https://github.com/ajisubarkah" data-size="large" data-show-count="true">
                 ajisubarkah
               </GitHubButton>
             </div>
           </div>
           <div className="newsletter-section">
-            <img src={foto} className="newsletter-avatar" alt="subarkah" />
+            <img src={Avatar} className="newsletter-avatar" alt="subarkah" />
             <div>
-              <h3>Get in touch</h3>
-              <p>
-                Web and Mobile Apps developer.<br></br>
-                <ButtonLink
-                  to="mailto:aji@subarkah.id"
-                  icon={['fas', 'envelope']}
-                />
-              </p>
+              <h3 className="nowrap">Aji Subarkah</h3>
+              <ButtonIcon to="call:+6285940900559" icon="call" />
+              <ButtonIcon to="mailto:aji@subarkah.id" icon="email" />
             </div>
           </div>
         </div>
